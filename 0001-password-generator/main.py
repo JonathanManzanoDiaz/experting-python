@@ -1,6 +1,6 @@
 import random
 import string
-
+print("Welcome to the Password Generator by Jonathan Manzano Diaz")
 # Here is the password length you want to generate
 password_length = int(input("Enter the password length: "))
 generatedPassword = ""
