@@ -6,7 +6,7 @@ I learned the basics of python for making the first project
 
 ## First Project (Password Generator)
 
-[VIEW PROJECT](https://github.com/JonathanManzanoDiaz/experting-python/0001-password-generator)
+[VIEW PROJECT](https://github.com/JonathanManzanoDiaz/experting-python/tree/461508b5fc0b676ec97f3378f67600961d10bd39/0001-password-generator)
 
 ```
 Learned:
