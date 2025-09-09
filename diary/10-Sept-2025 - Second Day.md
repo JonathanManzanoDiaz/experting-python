@@ -4,7 +4,7 @@ I learned the basics of python for making the first project
 
 ## Second Project (Todo List with File TxT)
 
-[VIEW PROJECT](https://github.com/JonathanManzanoDiaz/experting-python/tree/461508b5fc0b676ec97f3378f67600961d10bd39/0001-password-generator)
+[VIEW PROJECT](https://github.com/JonathanManzanoDiaz/experting-python/tree/b6c48fc32c7dc85d9d7cbdca8207d94a2e8a4a2d/0002-todo-list-with-txt)
 
 ```
 Learned:
