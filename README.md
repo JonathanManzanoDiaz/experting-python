@@ -15,3 +15,7 @@ Here I'm posting basic projects to expert projects in python!
 ### 12-Sept-2025
 
 [VIEW DAY](https://github.com/JonathanManzanoDiaz/experting-python/blob/52a9f1991bd58cf5a3a4d73f9f191223e2fcd436/diary/12-Sept-2025%20-%20Fourth%20Day.md)
+
+### 13-Sept-2025
+
+[VIEW DAY](https://github.com/JonathanManzanoDiaz/experting-python/blob/52a9f1991bd58cf5a3a4d73f9f191223e2fcd436/diary/12-Sept-2025%20-%20Fourth%20Day.md)
