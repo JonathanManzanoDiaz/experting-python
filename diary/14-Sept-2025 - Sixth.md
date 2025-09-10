@@ -1,4 +1,4 @@
-# SIXTH DAY (13-Sept-2025):
+# SIXTH DAY (14-Sept-2025):
 
 ## Sixth Project (Contact Book)
 
