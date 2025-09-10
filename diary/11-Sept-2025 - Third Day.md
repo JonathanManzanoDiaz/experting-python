@@ -2,7 +2,7 @@
 
 ## Third Project (Scrapping web data with File csv)
 
-[VIEW PROJECT](https://github.com/JonathanManzanoDiaz/experting-python/tree/b6c48fc32c7dc85d9d7cbdca8207d94a2e8a4a2d/0002-todo-list-with-txt)
+[VIEW PROJECT](https://github.com/JonathanManzanoDiaz/experting-python/tree/72e442dac0b4a0c93f0d4708629c278a7e5aca81/0003-scrapping-static-page)
 
 ```
 Learned:
