@@ -22,4 +22,4 @@ Here I'm posting basic projects to expert projects in python!
 
 ### 14-Sept-2025
 
-[VIEW DAY](https://github.com/JonathanManzanoDiaz/experting-python/blob/31e5a7637ab7e80ed3ed163153ab75f8378d20fd/diary/13-Sept-2025%20-%20Fifth.md)
+[VIEW DAY](https://github.com/JonathanManzanoDiaz/experting-python/blob/926ffe820a88d2895f3a33349efd6b2f6a1c2e7b/diary/14-Sept-2025%20-%20Sixth.md)
