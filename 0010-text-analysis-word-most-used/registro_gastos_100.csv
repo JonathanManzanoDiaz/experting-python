@@ -1,0 +1,101 @@
+fecha,categoria,monto,descripcion
+2025-06-13,Comida,74.8,Almuerzo
+2025-03-04,Transporte,74.31,Metro
+2025-06-23,Salud,10.98,Gimnasio
+2025-04-19,Comida,11.64,Almuerzo
+2025-03-01,Servicios,57.22,Luz
+2025-07-03,Salud,55.63,Gimnasio
+2025-02-26,Supermercado,29.62,Bebidas
+2025-08-11,Comida,70.57,Cena
+2025-03-29,Ocio,23.49,Concierto
+2025-07-15,Ocio,11.54,Cine
+2025-01-25,Ocio,61.36,Videojuegos
+2025-07-26,Comida,54.78,Cafetería
+2025-09-07,Supermercado,56.32,Compra semanal
+2025-08-01,Salud,88.83,Gimnasio
+2025-04-03,Servicios,71.2,Agua
+2025-01-12,Salud,77.87,Medicinas
+2025-01-21,Otros,86.98,Regalo
+2025-04-08,Ocio,64.48,Salida con amigos
+2025-04-04,Transporte,37.14,Taxi
+2025-06-21,Ocio,61.89,Cine
+2025-02-13,Servicios,18.43,Agua
+2025-04-08,Ocio,69.25,Concierto
+2025-08-04,Otros,24.83,Regalo
+2025-01-09,Otros,41.61,Papelería
+2025-01-17,Transporte,87.95,Uber
+2025-03-22,Transporte,41.07,Gasolina
+2025-08-23,Salud,16.43,Consulta médica
+2025-02-05,Transporte,55.05,Uber
+2025-07-11,Servicios,90.04,Teléfono
+2025-04-13,Ocio,99.74,Concierto
+2025-02-05,Servicios,11.36,Teléfono
+2025-01-13,Otros,17.4,Regalo
+2025-02-10,Otros,43.66,Accesorios
+2025-01-17,Supermercado,60.6,Snacks
+2025-04-30,Servicios,97.18,Internet
+2025-08-09,Comida,68.97,Almuerzo
+2025-05-18,Otros,77.44,Papelería
+2025-03-29,Comida,44.89,Desayuno
+2025-04-27,Comida,97.26,Desayuno
+2025-07-15,Transporte,91.48,Uber
+2025-08-11,Salud,84.56,Consulta médica
+2025-05-10,Servicios,17.4,Agua
+2025-07-15,Transporte,95.47,Uber
+2025-08-25,Servicios,60.9,Luz
+2025-05-06,Comida,93.09,Almuerzo
+2025-08-13,Otros,25.85,Papelería
+2025-03-03,Servicios,10.85,Luz
+2025-05-05,Otros,97.85,Regalo
+2025-05-17,Otros,15.02,Regalo
+2025-05-02,Servicios,28.34,Agua
+2025-08-12,Servicios,96.53,Teléfono
+2025-08-26,Servicios,72.01,Agua
+2025-04-13,Salud,38.91,Gimnasio
+2025-08-19,Servicios,14.3,Teléfono
+2025-02-27,Comida,4.55,Desayuno
+2025-05-22,Transporte,23.97,Uber
+2025-01-19,Salud,8.24,Gimnasio
+2025-01-18,Comida,9.41,Desayuno
+2025-03-02,Ocio,23.39,Salida con amigos
+2025-02-03,Salud,58.68,Gimnasio
+2025-03-04,Otros,81.23,Papelería
+2025-02-18,Comida,66.75,Almuerzo
+2025-04-01,Supermercado,48.03,Snacks
+2025-07-06,Comida,8.41,Almuerzo
+2025-07-06,Ocio,26.74,Cine
+2025-02-18,Servicios,16.17,Teléfono
+2025-02-16,Ocio,26.86,Salida con amigos
+2025-08-25,Comida,81.28,Cafetería
+2025-08-08,Servicios,7.43,Luz
+2025-05-19,Otros,96.98,Regalo
+2025-08-26,Otros,18.72,Regalo
+2025-05-05,Supermercado,86.8,Compra semanal
+2025-08-20,Comida,39.45,Cena
+2025-04-10,Ocio,30.31,Salida con amigos
+2025-06-28,Salud,67.03,Gimnasio
+2025-05-05,Transporte,31.43,Metro
+2025-09-05,Comida,74.23,Restaurante
+2025-01-16,Salud,8.07,Consulta médica
+2025-05-30,Supermercado,92.14,Bebidas
+2025-05-16,Transporte,96.18,Bus
+2025-01-21,Otros,9.18,Regalo
+2025-01-18,Salud,41.87,Medicinas
+2025-08-30,Servicios,58.94,Agua
+2025-01-11,Servicios,43.37,Luz
+2025-05-30,Servicios,93.63,Internet
+2025-02-22,Salud,33.13,Gimnasio
+2025-03-09,Supermercado,67.99,Compra semanal
+2025-03-18,Supermercado,93.08,Snacks
+2025-08-28,Comida,47.18,Almuerzo
+2025-05-25,Comida,54.92,Almuerzo
+2025-05-10,Ocio,93.49,Concierto
+2025-08-14,Comida,38.53,Cena
+2025-02-10,Supermercado,71.1,Bebidas
+2025-06-06,Otros,54.07,Accesorios
+2025-06-20,Otros,31.69,Accesorios
+2025-06-19,Comida,28.29,Cena
+2025-08-16,Comida,17.66,Restaurante
+2025-03-14,Servicios,72.47,Agua
+2025-02-22,Salud,85.66,Gimnasio
+2025-05-10,Supermercado,90.77,Snacks
