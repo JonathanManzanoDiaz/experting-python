@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word counter</title>
+    <link rel="stylesheet" href="{% static 'css/wordcounter/style.css' %}">
+</head>
+<body> 
+    <div class="container">
+        <form action="{% url 'counter' %}" method="post">
+            {% csrf_token %}
+            <textarea class='words' name="words" rows="5" cols="40"></textarea>
+            <br>
+            <button class="countBtn" type="submit">Count</button>
+        </form>
+    </div>
+</body>
+</html>
