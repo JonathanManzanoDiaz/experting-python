@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>Welcome to the notes!</h1>
+
+    <!-- Button create note -->
+    <button id="createNoteBtn" type="button">
+        <img class="create" src="{% static 'images/create.svg' %}" alt="Crear nota">
+    </button>
+    
+    <div class="container">
+        {% for note in notes %}
+            <div class="note">
+                <h3>{{ note.title }}</h3>
+                <button 
+                    type="button"
+                    class="open-modal" 
+                    data-id="{{ note.id }}"
+                    data-title="{{ note.title }}" 
+                    data-content="{{ note.content }}" 
+                    data-updated="{{ note.updated_at }}">
+                    <img class="pencil" src="{% static 'images/pencil.svg' %}" alt="Editar nota">
+                </button>
+                <p>{{ note.content }}</p>
+                <time>{{ note.updated_at }}</time>
+            </div>
+        {% endfor %}
+    </div>
+
+    <!-- Modal -->
+    <div id="noteModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal">&times;</span>
+            
+            <form method="POST" id="noteForm">
+                {% csrf_token %}
+                <input type="hidden" name="note_id" id="modalNoteId">
+
+                <label for="modalTitle">Título</label>
+                <input type="text" name="title" id="modalTitle">
+
+                <label for="modalContent">Contenido</label>
+                <textarea name="content" id="modalContent"></textarea>
+
+                <button type="submit" id="submitBtn">Guardar cambios</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
