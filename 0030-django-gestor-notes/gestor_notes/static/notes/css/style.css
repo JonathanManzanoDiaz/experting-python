@@ -1,0 +1,156 @@
+.navbar {
+    display: flex;
+}
+
+body {
+    background-color: darkviolet;
+    color: white;
+ 
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;            
+    padding: 2rem 4rem;
+    font-size: 2rem;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+}
+main {
+    display: grid;
+    place-content: center;
+    width: 100vw;
+
+}
+
+.container {
+    display: flex;
+    margin: 1rem;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.container-note {
+    border: 1px solid black;
+    padding: 3rem;
+    width: 350px;
+    text-align: center;
+    background-color: yellow;
+    border-radius: 12px;
+    position: relative;
+    max-height: 250px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.container-note:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+}
+span {
+    font-size: 0.85rem;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    color: black;
+}
+
+h3 {font-size: 2rem;
+color: black;}
+p {
+    font-size: 1.5rem;
+    color: black;
+    white-space: nowrap;       
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+.container-create form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.container-create {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 1.5rem 1rem;
+    margin: 2rem;
+    width: 550px;
+    height: 565px;
+    color:white;
+    box-shadow: 0 4px 6px rgba(255, 255, 255,0.2);
+}
+
+.title, .content {
+    padding: 1rem;
+    margin: 0.65rem 1rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    border: 1px solid white;
+}
+
+/* TEXT SELECTED */
+.title::selection, .content::selection {
+  background: #ffcc00; 
+  color: black; 
+}
+
+.title:focus, .content:focus {
+    outline: 0;
+    border-bottom: 1px solid white;
+    transform: scale(1.01);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.685);
+
+}
+
+.content {
+    height: 330px;
+}
+.submit {
+    border: 1px solid white;
+    font-size: 1.5rem;
+    height: 60px;
+    margin: 0.75rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.submit:hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.685);
+    color: white;
+}
+.submit:active {
+    background-color: yellow;
+    color: black;
+}
+.note {
+    background-color: yellow;
+    color: black;
+    margin: 4rem;
+    min-width: 400px;
+    max-width: 80%;
+    min-height: 300px;
+    text-align: center;
+    
+    padding: 6rem;
+    position: relative;
+    border-radius: 12px;
+}
+.note p {
+    text-wrap: wrap;
+}
+.note span {
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+    font-size: 1rem;
+}

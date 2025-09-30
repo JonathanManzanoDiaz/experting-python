@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Notes Gestor by JMD{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'notes/css/style.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    <!-- Header -->
+    {% block header %}
+
+    {% endblock %}
+
+    <!-- Contenido principal -->
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <!-- Scripts al final -->
+    {% block scripts %}
+    {% endblock %}
+</body>
+</html>

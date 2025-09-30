@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+    <div class="container">
+        {% for note in notes %}
+        <a href="{% url 'notes:note_details' pk=note.pk %}">
+
+            <div class="container-note">
+                <h3>{{ note.title }}</h3>
+                <p>{{ note.content }}</p>
+                <span>{{ note.updated_at }}</span>
+            </div>
+        </a>
+    {% endfor %}
+    </div>
+{% endblock content %}

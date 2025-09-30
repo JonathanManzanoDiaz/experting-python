@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% load static %}   {# 👈 necesario para poder usar {% static %} #}
+
+{% block header %}
+    {% include "notes/header.html" %}
+{% endblock header %}
+
+{% block content %}
+    <article class="note">
+        <a href="{% url 'notes:edit_note' note.id %}">
+            <img src="{% static 'images/pencil-fill.svg' %}" alt="Editar">
+        </a>
+        <h3>Title: <br>{{ note.title }}</h3>
+        <p>Note: <br>{{ note.content|linebreaksbr }}</p>
+        <span class="date">Date: {{ note.updated_at }}</span>
+    </article>
+{% endblock %}

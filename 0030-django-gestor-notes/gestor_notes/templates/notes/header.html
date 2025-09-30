@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block header %}
+    <header>
+        <a href="/">JonathanMD</a> 
+        <nav class='navbar'>
+            <ul>
+                <a href="{% url 'notes:index' %}">
+                    <li>Notes</li> 
+                </a> |
+                <a href="{% url 'notes:create_note' %}">
+                    <li>Create Note</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+  
+{% endblock %}
