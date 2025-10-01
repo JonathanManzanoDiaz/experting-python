@@ -118,6 +118,7 @@ STATIC_ROOT = BASE_DIR / 'staticfiles/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
-LOGIN_URL = 'login'
-LOGIN_REDIRECT_URL = 'profile'
+# core/settings.py
+LOGIN_URL = 'users:login'
+LOGIN_REDIRECT_URL = 'users:profile'
+LOGOUT_REDIRECT_URL = 'posts:index'
