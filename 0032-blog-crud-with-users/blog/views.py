@@ -18,6 +18,9 @@ def post_detail(request, pk):
 def post_edit(request, pk):
     post = get_object_or_404(Post, pk=pk)
 
+    if request.user != post.author and not request.user.is_superuser:
+        return redirect('posts:post_detail', pk=post.pk)
+
     if request.method == 'POST':
         form = PostForm(request.POST, instance=post)
         if form.is_valid():
@@ -45,7 +48,16 @@ def create_post(request):
     return render(request, 'blog/create_post.html', {'form': form})
 
 @login_required
+from django.contrib.auth.decorators import login_required
+from django.shortcuts import get_object_or_404, redirect
+from blog.models import Post
+
+@login_required
 def post_delete(request, pk):
     post = get_object_or_404(Post, pk=pk)
+
+    if request.user != post.author and not request.user.is_superuser:
+        return redirect('posts:post_detail', pk=post.pk)
+
     post.delete()
     return redirect('posts:index')
