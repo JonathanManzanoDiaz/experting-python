@@ -4,22 +4,28 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem 3rem;
     font-size: 1.85rem;
     box-shadow: 0px 4px 0px black;
     color:darkviolet;
     text-transform: uppercase;
-    align-items: center;
 }
 a {
     text-decoration: none;
     color: darkviolet;
 }
+
+.profile {
+    width: 40px;
+}
+
 ul {
     list-style-type: none;
     display: flex;
     gap: 30px;
     text-transform: uppercase;
+    align-items: center;
 }
 main {
     text-align: center;
@@ -28,6 +34,7 @@ main {
     justify-content: center;
     gap: 3rem;
     margin: 3rem;
+    position: relative;
 
 }
 .container {
@@ -119,4 +126,29 @@ button:active {
     color: black;
 }
 
-
+.signup {
+    background-color: white;
+    color: black;
+}
+.login {
+    background-color: teal;
+    color: white;
+}
+.logout {
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+.profilepost {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.mypost {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}

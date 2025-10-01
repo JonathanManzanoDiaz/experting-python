@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block main %}
+    <a href="{% url 'users:logout' %}"><button class='logout'>Logout</button></a>
+    <h1 class="mypost">My posts</h1>
+    <div class="profilepost">
+
+        {% for post in posts %}
+        <a href="{% url 'posts:post_detail' post.pk %}">
+            <div class="container">
+                <h3>{{ post.title }}</h3>
+                <p>{{ post.body }}</p>
+                <span>{{ post.date }}</span>
+                <span>{{ post.author }}</span>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+{% endblock main %}
