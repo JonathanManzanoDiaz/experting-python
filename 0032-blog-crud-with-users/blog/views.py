@@ -48,11 +48,6 @@ def create_post(request):
     return render(request, 'blog/create_post.html', {'form': form})
 
 @login_required
-from django.contrib.auth.decorators import login_required
-from django.shortcuts import get_object_or_404, redirect
-from blog.models import Post
-
-@login_required
 def post_delete(request, pk):
     post = get_object_or_404(Post, pk=pk)
 
