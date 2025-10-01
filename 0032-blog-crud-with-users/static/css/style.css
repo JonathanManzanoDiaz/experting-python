@@ -1,0 +1,122 @@
+body {
+    background-color: blanchedalmond
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    font-size: 1.85rem;
+    box-shadow: 0px 4px 0px black;
+    color:darkviolet;
+    text-transform: uppercase;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    color: darkviolet;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    text-transform: uppercase;
+}
+main {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    margin: 3rem;
+
+}
+.container {
+    border: 1px solid black;
+    min-width: 250px;
+    max-width: 300px;
+    padding: 1rem 2rem;
+
+}
+
+.container_post {
+    min-width: 400px;
+    max-width: 1500px;
+    min-height: 150px;
+    padding: 1rem;
+    border: 1px solid black;
+    position: relative;
+    
+}
+.post_detail_date {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+
+.recycle {
+    width: 24px
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-form {
+    border: 1px solid white;
+    min-height: 400px;
+    padding: 3rem 2rem;
+    background-color: beige;
+    border-radius: 12px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    max-width: 1500px;
+    min-height: 400px;
+    gap: 5px;
+    border-radius: 12px;
+}
+
+.title, .body, .slug {
+    font-size: 1.5rem;
+    height: 40px;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin: 0.5rem 0;
+
+}
+
+.body {
+    height: 280px;
+}
+.title:focus, .body:focus {
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+    padding: 1rem;
+    transition: all 0.35s ease-in-out;
+
+}
+button {
+    font-size: 1.5rem;
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+}
+button:focus {
+    transition: all .5s ease-in-out;
+    transform: scale(1.05);
+}
+button:active {
+    background-color: yellow;
+    color: black;
+}
+
+

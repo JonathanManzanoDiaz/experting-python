@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block main %}
+        <div class="container_post">
+            <div class="buttons">
+                <a href="{% url 'posts:post_edit' post.pk %}">
+                    <img class="pencil-img" src="{% static 'images/pencil.svg' %}" alt="Edit Post">
+                </a>
+                <a href="{% url 'posts:post_delete' post.pk %}">
+                    <img class="recycle" src="{% static 'images/recycle.svg' %}" alt="Delete Post">
+                </a>
+            </div>
+            <h3 class="post_detail_title">{{ post.title }}</h3>
+            <p class="post_detail_body">{{ post.body }}</p>
+            <span class="post_detail_date">{{ post.date }}</span>
+        </div>
+{% endblock main %}
