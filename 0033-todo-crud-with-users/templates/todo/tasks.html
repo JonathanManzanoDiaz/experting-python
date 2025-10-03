@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% block title %} Task List {% endblock %}
+
+{% block main %}
+  {% for task in tasks %}
+    <div class="task-card">
+        <h3>{{ task.title }}</h3>
+        <p>{{ task.description }}</p>
+
+        <div class="actions">
+            <a href="{% url 'todo:completed_task' task.pk %}" class="btn completed">✔ Completed</a>
+            <a href="{% url 'todo:edit_task' task.pk %}" class="btn edit">✏ Edit Task</a>
+            <a href="{% url 'todo:delete_task' task.pk %}" class="btn delete">🗑 Delete Task</a>
+        </div>
+    </div>
+  {% empty %}
+    <p>No tasks available 🎉</p>
+  {% endfor %}
+{% endblock %}

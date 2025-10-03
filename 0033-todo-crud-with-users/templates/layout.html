@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+            Django Todo App
+        {% endblock title %}
+    </title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">📝 TO-DO</a>
+            <ul>
+                <li><a href="{% url 'todo:tasks' %}">Tasks</a></li>
+                <li><a href="{% url 'todo:new_task' %}">Create Task</a></li>
+                {% if user.is_authenticated %}
+                    <li><a href="{% url 'users:logout' %}">Logout</a></li>
+                {% else %}
+                    <li><a href="{% url 'users:signup' %}">Sign up</a></li>
+                    <li><a href="{% url 'users:login' %}">Login</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block main %}{% endblock main %}
+    </main>
+
+    <footer>
+        {% block footer %}
+        © {{ now|date:"Y" }} - Django Todo App | Made with ❤️ in Django - Jonathan Manzano Diaz
+        {% endblock footer %}
+    </footer>
+</body>
+</html>

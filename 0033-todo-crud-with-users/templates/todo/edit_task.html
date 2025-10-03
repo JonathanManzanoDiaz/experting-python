@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block main %}
+    <form action="" method='POST'>
+        {% csrf_token %}
+        <label for="title">Title:</label><br>
+        <input type="text" name="title" class="title"><br>
+        <label for="description">Description:</label><br>
+        <textarea type="text" name="description" class="description"></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+{% endblock main %}

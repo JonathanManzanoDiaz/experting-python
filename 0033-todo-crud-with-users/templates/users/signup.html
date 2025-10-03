@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block main %}
+  <form action="" class="form" method="POST">
+    {% csrf_token %}
+
+    <input type="text" name="first_name" class="title" placeholder="First Name"
+           value="{{ data.first_name|default:'' }}">
+
+    <input type="text" name="last_name" class="title" placeholder="Last Name"
+           value="{{ data.last_name|default:'' }}">
+
+    <input type="email" name="email" class="title" placeholder="E-Mail"
+           value="{{ data.email|default:'' }}">
+    {% if errors.email %}<p class="err">{{ errors.email }}</p>{% endif %}
+
+    <input type="text" name="username" class="title" placeholder="Username"
+           value="{{ data.username|default:'' }}">
+    {% if errors.username %}<p class="err">{{ errors.username }}</p>{% endif %}
+
+    <input type="password" name="password" class="title" placeholder="Password">
+    {% if errors.password %}<p class="err">{{ errors.password }}</p>{% endif %}
+
+    <button type="submit">Submit</button>
+  </form>
+{% endblock main %}
